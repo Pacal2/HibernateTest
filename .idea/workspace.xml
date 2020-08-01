@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e5677e1-6481-4e66-8f0a-8e96c406908b" name="Default Changelist" comment="" />
+    <list default="true" id="8e5677e1-6481-4e66-8f0a-8e96c406908b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AlienName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Alien.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Alien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Alien.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,9 +19,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="hibernate-configuration-5.2" />
         <option value="hibernate-main-5.2" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -27,6 +36,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1fPsJlHUf3ASoCRZ9Cr1UpLZRkt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -82,6 +94,7 @@
       <workItem from="1596130996141" duration="3619000" />
       <workItem from="1596273179373" duration="1223000" />
       <workItem from="1596274477569" duration="419000" />
+      <workItem from="1596275261637" duration="4269000" />
     </task>
     <servers />
   </component>
@@ -89,6 +102,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="240" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1596294594840">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="240" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1596294594840" />
     <state x="1035" y="297" width="844" height="622" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1596132113226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -101,22 +118,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1066" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596133834086" />
-    <state width="914" height="279" key="GridCell.Tab.0.bottom" timestamp="1596274896397">
+    <state width="894" height="279" key="GridCell.Tab.0.bottom" timestamp="1596295011592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596274896397" />
-    <state width="914" height="279" key="GridCell.Tab.0.center" timestamp="1596274896397">
+    <state width="894" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596295011592" />
+    <state width="894" height="279" key="GridCell.Tab.0.center" timestamp="1596295011592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596274896397" />
-    <state width="914" height="279" key="GridCell.Tab.0.left" timestamp="1596274896397">
+    <state width="894" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596295011592" />
+    <state width="894" height="279" key="GridCell.Tab.0.left" timestamp="1596295011592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596274896397" />
-    <state width="914" height="279" key="GridCell.Tab.0.right" timestamp="1596274896397">
+    <state width="894" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596295011592" />
+    <state width="894" height="279" key="GridCell.Tab.0.right" timestamp="1596295011592">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596274896397" />
+    <state width="894" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596295011592" />
     <state x="83" y="218" key="Maven.ArtifactSearchDialog" timestamp="1596131327471">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -125,5 +142,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="99" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596274308964" />
+    <state x="183" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1596275267758">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="183" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596275267758" />
   </component>
 </project>
