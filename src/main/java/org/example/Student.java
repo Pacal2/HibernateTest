@@ -1,7 +1,8 @@
 package org.example;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Student {
@@ -9,6 +10,8 @@ public class Student {
     private int number;
     private String name;
     private int marks;
+    //@ManyToMany(mappedBy="listOfStudents")
+    private List<Laptop> listOfLaptops = new ArrayList<>();
 
     public Student() {
 
@@ -42,5 +45,23 @@ public class Student {
 
     public void setMarks(int marks) {
         this.marks = marks;
+    }
+
+    public List<Laptop> getListOfLaptops() {
+        return listOfLaptops;
+    }
+
+    public void setListOfLaptops(ArrayList<Laptop> listOfLaptops) {
+        this.listOfLaptops = listOfLaptops;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "number=" + number +
+                ", name='" + name + '\'' +
+                ", marks=" + marks +
+                ", listOfLaptops=" + listOfLaptops +
+                '}';
     }
 }
