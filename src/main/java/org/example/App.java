@@ -21,6 +21,7 @@ public class App
 
         //Set up object Alien
 
+        /*
         AlienName pacalName = new AlienName("Javik", "Kuhul", "Chatan");
         AlienName xenoName = new AlienName("Xe", "No", "Morth");
         AlienName fredName = new AlienName("Freddy", "Bob", "Jones");
@@ -28,8 +29,14 @@ public class App
         Alien pacal = new Alien(1, pacalName, "Green");
         Alien xeno = new Alien(2, xenoName, "Blue");
         Alien fred = new Alien(3, fredName, "Red");
+        */
+
+
+
 
         // Set up object laptop
+
+        /*
         Laptop samsung = new Laptop(101, "Samsung");
         samsung.setAlien(pacal);
 
@@ -52,6 +59,8 @@ public class App
         fred.getLaps().add(apple);
         fred.getLaps().add(acer);
 
+         */
+
         //listOfLaptops.add(dellLaptop);
 
         // Set up object Student
@@ -59,6 +68,8 @@ public class App
         //student.getListOfLaptops().add(samsungLaptop);
 
         //samsungLaptop.getListOfStudents().add(student);
+
+
 
 
 
@@ -72,7 +83,7 @@ public class App
 
         // Saving object to data base
 
-
+        /*
         session.save(xeno);
         session.save(fred);
         session.save(pacal);
@@ -82,30 +93,32 @@ public class App
         session.save(acer);
         session.save(apple);
         session.save(samsung);
+         */
 
+        // Getting data from data base
+        //Alien a1 = (Alien) session.get(Alien.class, 1);
+        //System.out.println(a1.getName());
 
+        //System.out.println(pacal.toString());
 
-
-        //session.save(dellLaptop);
-        //session.save(student);
-        //session.save(pacal);
-
-
-
-
-        // Getting data grom data base
-        Alien a1 = (Alien) session.get(Alien.class, 1);
-        System.out.println(a1.getName());
-
-
-        //pacal = (Alien) session.get(Alien.class, 105);
-
-
-
+        // Caching data
+        Alien a2 = null;
+        a2 = (Alien) session.get(Alien.class, 1);
+        System.out.println(a2);
 
         // Commits
         session.getTransaction().commit();
+        session.close();
 
-        //System.out.println(pacal.toString());
+        // Additional sessions
+        Session session2 = sessionFactory.openSession();
+        session2.beginTransaction();
+
+        a2 = (Alien) session2.get(Alien.class, 1);
+        System.out.println(a2);
+
+        session2.getTransaction().commit();
+        session2.close();
+
     }
 }

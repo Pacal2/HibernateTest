@@ -1,10 +1,17 @@
 package org.example;
 
+
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.Collection;
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 
 @Entity
+@Cacheable
+@org.hibernate.annotations.Cache(usage = org.hibernate.annotations.CacheConcurrencyStrategy.READ_WRITE)
 //@Table(name="alien_table")
 public class Alien{
 
