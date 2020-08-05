@@ -1,5 +1,6 @@
 package org.example;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -7,6 +8,8 @@ import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 import java.util.Collection;
+import java.util.List;
+import java.util.Random;
 
 
 /**
@@ -30,9 +33,6 @@ public class App
         Alien xeno = new Alien(2, xenoName, "Blue");
         Alien fred = new Alien(3, fredName, "Red");
         */
-
-
-
 
         // Set up object laptop
 
@@ -58,7 +58,6 @@ public class App
         fred.getLaps().add(dell);
         fred.getLaps().add(apple);
         fred.getLaps().add(acer);
-
          */
 
         //listOfLaptops.add(dellLaptop);
@@ -69,12 +68,8 @@ public class App
 
         //samsungLaptop.getListOfStudents().add(student);
 
-
-
-
-
         // Set up session
-        Configuration configuration = new Configuration().configure().addAnnotatedClass(Alien.class).addAnnotatedClass(Laptop.class);
+        Configuration configuration = new Configuration().configure().addAnnotatedClass(Alien.class).addAnnotatedClass(Laptop.class).addAnnotatedClass(Student.class);
         ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
         SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
         Session session = sessionFactory.openSession();
@@ -101,10 +96,41 @@ public class App
 
         //System.out.println(pacal.toString());
 
+        //Query caching
+        Query q1 = session.createQuery("FROM Alien WHERE ID=101");
+        q1.setCacheable(true);
+        Alien a3 = (Alien) q1.uniqueResult();
+
         // Caching data
         Alien a2 = null;
         a2 = (Alien) session.get(Alien.class, 1);
         System.out.println(a2);
+
+        // HQL (Hibernate Query Language)
+        Random random = new Random();
+
+        /*
+        // Creating multiple entries
+        for (int i=1; i<=50; i++) {
+            Student s = new Student();
+            s.setNumber(i);
+            s.setName("Name " + i);
+            s.setMarks(random.nextInt(100));
+            session.save(s);
+        }
+         */
+
+        // Printing data(HQL)
+        Query qForList = session.createQuery("FROM Student WHERE marks > 50");
+        List<Student> students = qForList.list();
+
+        for(Student s : students) {
+            System.out.println(s);
+        }
+
+        Query qForOne = session.createQuery("FROM Student WHERE number=7");
+        Student student = (Student) qForOne.uniqueResult();
+        System.out.println(student);
 
         // Commits
         session.getTransaction().commit();
@@ -113,6 +139,10 @@ public class App
         // Additional sessions
         Session session2 = sessionFactory.openSession();
         session2.beginTransaction();
+
+        Query q2 = session2.createQuery("FROM Alien WHERE ID=101");
+        q2.setCacheable(true);
+        a3 = (Alien) q2.uniqueResult();
 
         a2 = (Alien) session2.get(Alien.class, 1);
         System.out.println(a2);

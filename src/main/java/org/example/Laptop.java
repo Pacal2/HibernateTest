@@ -2,7 +2,10 @@ package org.example;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Laptop {
@@ -10,8 +13,8 @@ public class Laptop {
     @Id
     private int Id;
     private String name;
-    //@ManyToMany
-    //private List<Student> listOfStudents = new ArrayList<>();
+    @ManyToMany
+    private List<Student> listOfStudents = new ArrayList<>();
 
     @ManyToOne
     private Alien alien;

@@ -10,7 +10,7 @@ public class Student {
     private int number;
     private String name;
     private int marks;
-    //@ManyToMany(mappedBy="listOfStudents")
+    @ManyToMany(mappedBy="listOfStudents")
     private List<Laptop> listOfLaptops = new ArrayList<>();
 
     public Student() {

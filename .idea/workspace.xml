@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="8e5677e1-6481-4e66-8f0a-8e96c406908b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Alien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Alien.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Alien.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Alien.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/App.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +98,8 @@
       <workItem from="1596275261637" duration="4269000" />
       <workItem from="1596296189290" duration="11105000" />
       <workItem from="1596554077939" duration="4506000" />
+      <workItem from="1596570529488" duration="88000" />
+      <workItem from="1596640762742" duration="4316000" />
     </task>
     <servers />
   </component>
@@ -123,22 +123,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1066" y="279" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596133834086" />
-    <state width="914" height="273" key="GridCell.Tab.0.bottom" timestamp="1596560723491">
+    <state width="914" height="273" key="GridCell.Tab.0.bottom" timestamp="1596650563910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596560723491" />
-    <state width="914" height="273" key="GridCell.Tab.0.center" timestamp="1596560723491">
+    <state width="914" height="273" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1596650563910" />
+    <state width="914" height="273" key="GridCell.Tab.0.center" timestamp="1596650563910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596560723491" />
-    <state width="914" height="273" key="GridCell.Tab.0.left" timestamp="1596560723491">
+    <state width="914" height="273" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1596650563910" />
+    <state width="914" height="273" key="GridCell.Tab.0.left" timestamp="1596650563909">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596560723491" />
-    <state width="914" height="273" key="GridCell.Tab.0.right" timestamp="1596560723491">
+    <state width="914" height="273" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1596650563909" />
+    <state width="914" height="273" key="GridCell.Tab.0.right" timestamp="1596650563910">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596560723491" />
+    <state width="914" height="273" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596650563910" />
     <state x="83" y="218" key="Maven.ArtifactSearchDialog" timestamp="1596131327471">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -147,10 +147,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="99" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596274308964" />
-    <state x="183" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1596554121395">
+    <state x="183" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1596641360935">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="183" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596554121395" />
+    <state x="183" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596641360935" />
     <state x="150" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1596556383897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
