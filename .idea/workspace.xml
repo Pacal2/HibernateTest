@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8e5677e1-6481-4e66-8f0a-8e96c406908b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Laptop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +95,7 @@
       <workItem from="1596554077939" duration="4506000" />
       <workItem from="1596570529488" duration="88000" />
       <workItem from="1596640762742" duration="4316000" />
+      <workItem from="1597572433190" duration="512000" />
     </task>
     <servers />
   </component>
@@ -147,10 +143,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="766" y="99" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596274308964" />
-    <state x="183" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1596641360935">
+    <state x="183" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1597572677646">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="183" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1596641360935" />
+    <state x="183" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597572677646" />
     <state x="150" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1596556383897">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
