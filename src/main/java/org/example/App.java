@@ -121,6 +121,7 @@ public class App
          */
 
         // Printing data(HQL)
+        /*
         Query qForList = session.createQuery("FROM Student WHERE marks > 50");
         List<Student> students = qForList.list();
 
@@ -132,11 +133,33 @@ public class App
         Student student = (Student) qForOne.uniqueResult();
         System.out.println(student);
 
+         */
+
+        // Printing data(HQL) part. 2
+        int number = 7;
+        Query q = session.createQuery("SELECT number, marks, name FROM Student WHERE number= :number");
+        q.setParameter("number",number);
+        Query qList = session.createQuery("SELECT number, marks, name FROM Student");
+
+        Object[] studentTwo = (Object[]) q.uniqueResult();;
+        List<Object[]> studentTwoList = (List<Object[]>) qList.list();
+
+        for(Object o : studentTwo) {
+            System.out.println(o);
+        }
+
+        for(Object[] studentFromList : studentTwoList) {
+            System.out.println(studentFromList[0] + " : " + studentFromList[1] + " : " + studentFromList[2]);
+        }
+
+        System.out.println(studentTwo[0] + " : " + studentTwo[1] + " : " + studentTwo[2]);
+
         // Commits
         session.getTransaction().commit();
-        session.close();
+        //session.close();
 
         // Additional sessions
+        /*
         Session session2 = sessionFactory.openSession();
         session2.beginTransaction();
 
@@ -149,6 +172,8 @@ public class App
 
         session2.getTransaction().commit();
         session2.close();
+
+         */
 
     }
 }
