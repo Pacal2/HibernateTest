@@ -1,14 +1,13 @@
 package org.example;
 
-import org.hibernate.Query;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import org.hibernate.*;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 import org.hibernate.service.ServiceRegistryBuilder;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 
@@ -136,6 +135,7 @@ public class App
          */
 
         // Printing data(HQL) part. 2
+        /*
         int number = 7;
         Query q = session.createQuery("SELECT number, marks, name FROM Student WHERE number= :number");
         q.setParameter("number",number);
@@ -154,8 +154,48 @@ public class App
 
         System.out.println(studentTwo[0] + " : " + studentTwo[1] + " : " + studentTwo[2]);
 
+         */
+
+        // Printing data(HQL) part. 3 - native queries
+        /*
+        SQLQuery query = session.createSQLQuery("SELECT * FROM student WHERE marks>60");
+        query.setResultTransformer(Criteria.ALIAS_TO_ENTITY_MAP);
+        List students = query.list();
+
+        for(Object o : students) {
+            Map m = (Map)o;
+            System.out.println(m.get("name") + " : " + m.get("marks"));
+        }
+
+         */
+
+        // Hibernate Object States Persistence Life Cycle
+        Laptop l = new Laptop();
+        l.setId(106);
+        l.setName("Sony");
+
+        session.save(l);
+
+
+        l.setName("Dell");
+
+        //session.remove(l);
+
+
+
+
+
+
         // Commits
         session.getTransaction().commit();
+
+        // Detaching
+        /*
+        session.evict(l);
+        l.setName("Asus");
+
+         */
+
         //session.close();
 
         // Additional sessions
