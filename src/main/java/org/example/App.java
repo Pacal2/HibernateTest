@@ -96,6 +96,7 @@ public class App
         //System.out.println(pacal.toString());
 
         //Query caching
+        /*
         Query q1 = session.createQuery("FROM Alien WHERE ID=101");
         q1.setCacheable(true);
         Alien a3 = (Alien) q1.uniqueResult();
@@ -107,6 +108,8 @@ public class App
 
         // HQL (Hibernate Query Language)
         Random random = new Random();
+
+         */
 
         /*
         // Creating multiple entries
@@ -170,6 +173,7 @@ public class App
          */
 
         // Hibernate Object States Persistence Life Cycle
+        /*
         Laptop l = new Laptop();
         l.setId(106);
         l.setName("Sony");
@@ -181,10 +185,12 @@ public class App
 
         //session.remove(l);
 
+         */
 
-
-
-
+        // Get vs. Load
+        Laptop lap = (Laptop) session.get(Laptop.class, 6);
+        // Laptop lap = (Laptop) session.load(Laptop.class, 6);
+        System.out.println(lap);
 
         // Commits
         session.getTransaction().commit();
